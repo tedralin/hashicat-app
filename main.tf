@@ -120,7 +120,7 @@ resource "null_resource" "configure-cat-app" {
 }
 
 module "cloud-storage" {
-  source     = "app.terraform.io/mtgdb/cloud-storage/google"
+  source     = "app.terraform.io/mtgdb2/cloud-storage/google"
   version    = "3.4.1"
   names      = ["hashicat-private"]
   prefix     = var.prefix
